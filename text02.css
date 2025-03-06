@@ -1,0 +1,64 @@
+/* @media screen and (max-width:500px){
+    body{
+        background-color: black;
+    }
+} */
+
+/* @media screen and (min-width:300px) and (max-width:700px) {
+    body{
+        background-color: blue;
+    }
+} */
+
+/* @media screen and (orientation: landscape) {
+    body{
+        background-color: red;
+    }
+} */
+
+/* @media screen and (orientation: portrait) {
+    body{
+        background-color: yellow;
+    }
+} */
+
+/* @media screen and (orientation: portrait) and (min-width:300px) and (max-width:600px) {
+    body{
+        background-color: blue;
+    }
+} */
+
+/* @media screen and (orientation: portrait), (min-width:700px){
+    body{
+        background-color: #1f87d8;
+    }
+} */
+
+/* @media (orientation: portrait) {
+    body{
+        background-color: yellow;
+    }
+} */
+/* 唯一可以省略不打的 screen */
+
+
+/*手機版*/
+@media (max-width:480px){
+    body{
+        background-color: blue;
+    }
+}
+
+/*平版*/
+@media (min-width:481px) and (max-width:1279px){
+    body{
+        background-color: yellow;
+    }
+}
+
+/*電腦版*/
+@media (min-width:1280px){
+    body{
+        background-color: red;
+    }
+}

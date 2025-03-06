@@ -1,0 +1,98 @@
+body {
+    background-color: #fafae1;
+    font-family: 微軟正黑體;
+}
+
+#wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+/* #logo {
+    height: 250px;
+} */
+#logo img {
+    width: 100%;
+    display: block;
+}
+nav {
+    background-color: #70302e;
+    text-align: center;
+}
+nav ul {
+    display: inline-block;
+    margin: 0;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #999c0e;
+}
+#content_in {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 50px;
+}
+#content_in h1 {
+    color: #bc4131;
+    margin-bottom: 20px;
+}
+#content_in p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#content_in a {
+    display: block;
+    /* 這裡把原本行內的文字元素 轉成 區塊 */
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #b93e35;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+}
+footer {
+    background-color: #735529;
+    text-align: center;
+}
+footer p {
+    font-size: 10px;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 0 ;
+}
+
+/* 響應式設計：當螢幕寬度小於等於 1024px 時的樣式 */
+@media screen and ( max-width: 1024px) {
+    #wrapper {
+        width: 80%;
+         /* 將容器寬度設為視窗寬度的 80%，使內容在平板等較小螢幕上有更好的顯示效果 */
+    }
+}
+/* 響應式設計：當螢幕寬度小於等於 640px 時的樣式（適用於手機等小螢幕設備） */
+@media screen and ( max-width: 640px ) {
+    li a {
+        padding: 10px;
+        /* 在小螢幕上增加連結的內距，使點擊區域更大，更容易觸碰 */
+    }
+}
+/* logo 區塊的樣式設定 */
+/* #logo {
+    /* height: 250px; */
+
+/* logo 內的圖片樣式 */
+#logo img {
+    width: 100%;
+    /* 讓圖片寬度填滿父元素的寬度，實現響應式圖片 */
+}
+
